@@ -8,12 +8,6 @@ const supabase = createClient(
     process.env.SUPABASE_SERVICE_ROLE
 );
 
-// supabase.connect((err) => {
-//     if (err) {
-//         throw err;
-//     }
     console.log('Conectado a la base de datos');
-
-// });
 
 module.exports = supabase;
