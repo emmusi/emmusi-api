@@ -1,0 +1,19 @@
+GET http://localhost:444/api/cursos-matriculados/getCursosMatriculados/322c7db4-5c86-41c3-8876-9c6e80fa92c5 HTTP/1.1
+
+###
+
+POST http://localhost:444/api/cursos-matriculados/insertCursoMatriculado HTTP/1.1
+content-type: application/json
+
+{
+        "idEstudiante": "1741dc1b-4fc3-497f-aeb1-608f84dcfd53",
+        "idCurso": "84a946c9-83b5-417b-9b54-ad1a0f15afd5",
+        "idHorario": "",
+        "ciclo": "I-2024",
+        "nota": "",
+        "estado"
+}
+
+###
+
+DELETE http://localhost:444/api/cursos-matriculados/deleteCursoMatriculado/322c7db4-5c86-41c3-8876-9c6e80fa92c5 HTTP/1.1

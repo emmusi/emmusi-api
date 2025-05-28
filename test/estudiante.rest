@@ -1,0 +1,38 @@
+GET http://localhost:444/api/estudiantes/getEstudiantes HTTP/1.1
+
+###
+
+GET http://localhost:444/api/estudiantes/getEstudiante/61a1653c-d776-432c-b59b-f71749fd6acc HTTP/1.1
+
+###
+
+POST http://localhost:444/api/estudiantes/insertEstudiante  HTTP/1.1
+content-type: application/json
+
+{
+        "cedula": "123456789",
+        "nombre": "Rodolfo",
+        "telefono": "44444444",
+        "especialidad": "Música",
+        "subespecialidad": "Guitarra"
+
+}
+
+###
+
+PUT http://localhost:444/api/estudiantes/updateEstudiante/61a1653c-d776-432c-b59b-f71749fd6acc  HTTP/1.1
+content-type: application/json
+
+{
+
+        "cedula": "123456789",
+        "nombre": "Rodolfo Méndez",
+        "telefono": "44444444",
+        "especialidad": "Música",
+        "subespecialidad": "Piano"
+        
+}
+
+###
+
+DELETE http://localhost:444/api/estudiantes/deleteEstudiante/61a1653c-d776-432c-b59b-f71749fd6acc HTTP/1.1
