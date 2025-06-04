@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node src/index.js"
-  },
+  "dev": "nodemon src/index.js",
+  "start": "node src/index.js",
+  "build": "echo 'No build step needed for backend Express app'"
+ },
   "keywords": [],
   "author": "",
   "license": "ISC",
